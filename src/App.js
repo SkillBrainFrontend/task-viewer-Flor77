@@ -1,5 +1,7 @@
 import "./App.css";
-import TaskCard from "./components/task-card/TaskCard";
+// import TaskCard from "./components/task-card/TaskCard";
+import TaskViewer from "./components/task-viewer/TaskViewer"
+
 
 function App() {
   const data = [
@@ -10,27 +12,46 @@ function App() {
       dueDate: new Date(2022, 5, 23),
     },
     {
-      id: "T-2",
-      name: "12 Create a Design System for Enum Workspace.",
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
       status: "In Progress",
       dueDate: new Date(2022, 7, 24),
+    },
+    {
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
+      status: "Completed",
+      dueDate: new Date(2022, 7, 24),
+    },
+    {
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
+      status: "Done",
+      dueDate: new Date(2022, 7, 24),
+    },
+    {
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
+      status: "In Progress",
+      dueDate: new Date(2022, 7, 24),
+    },
+    {
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
+      status: "Todo",
+      dueDate: new Date(2022, 7, 24),
+    },
+    {
+      id: "T-1",
+      name: "Create a Design System for Enum Workspace.",
+      status: "Completed",
+      dueDate: new Date(2022, 0, 24),
     },
   ];
 
   return (
     <div className="app-container">
-      <TaskCard
-        id={data[0].id}
-        status={data[0].status}
-        name={data[0].name}
-        dueDate={data[0].dueDate}
-      />
-      <TaskCard
-        id={data[1].id}
-        status={data[1].status}
-        name={data[1].name}
-        dueDate={data[1].dueDate}
-      />
+      <TaskViewer data={data}/>
     </div>
   );
 }

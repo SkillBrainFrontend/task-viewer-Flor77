@@ -1,0 +1,10 @@
+.task-viewer {
+  background-color: #f3f3fb;
+  max-width: 1500px;
+  height: 856px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 40px;
+  padding: 40px;
+}
