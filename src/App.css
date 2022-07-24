@@ -1,6 +1,5 @@
 .app-container {
-  background-color: #f3f3fb;
-  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
